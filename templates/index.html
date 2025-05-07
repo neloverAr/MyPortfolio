@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Nelover's Resume - Profile HTML Page</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/all.min.css">
+     <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../static/css/tooplate-ben-resume-style.css">
+<!--
+Tooplate 2120 Ben Resume
+https://www.tooplate.com/view/2120-ben-resume
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+              🌻 Nelover Resume
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href='#projects' class="nav-link smoothScroll">Projects</a>
+                  </li>
+
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+                    <a href="{{url_for('download_cv')}}" class="custom-btn btn" download>Download CV</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+
+         <div class="container">
+            <div class="row">
+
+                  <div class="mx-auto col-lg-5 col-md-5 col-10">
+                      <img src="../static/images/ben.jpg" class="img-fluid" alt="Ben Resume HTML Template">
+                  </div>
+
+                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                        <div class="hero-text">
+
+                            <h1 class="hero-title">👋 Nelover, a mobile developer</h1>
+
+                            <a href="mailto:nelover.ar@icloud.com" class="email-link">
+                                nelover.ar@icloud.com
+                            </a>
+                          
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4">This is Nelover's Resume</h3>
+
+                    <p>Creative and detail-oriented Software Engineer with a strong background in mobile and Flutter development, now embarking on an academic journey in Artificial Intelligence and Cybersecurity.
+                      </p>
+
+                    <p>Flexible and adaptable, with a strong focus on achieving project goals efficiently.
+                      Passionate about learning new technologies and contributing to impactful projects.</p>
+
+                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
+                        <li><strong>Full Name :</strong> Nelover Aburas </li>
+
+                        <li><strong>Date of Birth:</strong> 05 July 2000</li>
+
+                        <!-- <li><strong>Website :</strong> company.co</li> -->
+
+                        <li><strong>Email :</strong> nelover.ar@icloud.com</li>
+                        <li><strong>Education :</strong> Computer Systems Engineering, GPA: 94.95% </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 mx-auto col-md-6 col-12">
+                    <img src="../static/images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                </div>
+
+            </div>
+            <div class="row about-third">
+            	<div class="col-lg-4 col-md-4 col-12">
+                <h3>2023</h3>
+                <p>Valedictorian reward for being in the first position in
+                  the collage.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                <h3>2024</h3>
+                <p>Offer of admission to graduate studies at the University
+                  of Waterloo.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                <h3>2025</h3>
+                <p>Egypt Scholars Student Support Award (ESSA).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <div class="container" id="projects">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../static/images/works/jinan.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Jinan</h5>
+              <!-- <p class="card-text">Brief description of the project.</p> -->
+              <a href="./projects.html#proj1" class="btn btn-primary project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../static/images/works/Evalu8.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Evalu-8</h5>
+              <!-- <p class="card-text">Brief description of the project.</p> -->
+              <a href="./projects.html#proj2" class="btn btn-primary project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../static/images/works/Bamo.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Bamo</h5>
+              <!-- <p class="card-text">Brief description of the project.</p> -->
+              <a href="./projects.html#proj3" class="btn btn-primary project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat .col for more projects -->
+      </div>
+    </div>
+
+         <!-- Work History -->
+         <section class="faq section-padding" id="workHistory">
+        
+          <div class="container">
+              
+              <div class="row">
+  
+                  <div class="col-lg-12 col-12">
+  
+                      <h3 class="mb-5">Work History</h3>
+  
+                      <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               <span>Freelancer</span>
+                               <span>2023 Augest - Present</span>
+                                 
+                              </button>
+                            </h2>
+                          </div>
+  
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p> Mostql, Upwork </p>
+  
+                              <p>Mobile applications Development (Flutter)</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link d-flex justify-content-between collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span>Flutter Developer</span>
+                               <span>2021 Augest - 2023 Augest</span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p>World Bank, Palestine</p>
+                              <ul>
+                                <li>Proved successful working within tight deadlines
+                                  and a fast-paced environment.</li>
+                                <li>Proficient in Flutter, Dart, and app development best
+                                    practices.</li>
+                                <li>Familiarity with Clean Architecture principles</li>
+                                <li>Experience on state management tools like GetX and
+                                      Provider.</li>
+                                <li>Able to handle JSON and XMLHTTP requests from
+                                      web services.</li>
+                                <li>Expertise in Android and IOS application
+                                      development using Android SDK, Android emulator,
+                                      Xcode and IOS simulator.</li>
+                                <li>Experience on uploading iOS apps to TestFlight for
+                                        beta version or distribution.</li>
+                                <li>Experience on Firebase.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link d-flex justify-content-between collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>Web Developer</span>
+                               <span>2020 June - 2020 September</span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p>Portals Compony, Sudi Arabia</p>
+                              <ul></ul>
+                                <li>HTML, CSS, Bootstrap.</li>
+                                <li>Wordpress.</li>
+                                <li>SEO</li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+  
+                  </div>
+  
+                </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- container -->
+      </section>
+  
+
+    <!-- TESTIMONIAL -->
+     <section class="testimonials section-padding" id="testimonials">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-12">
+                        <h3 class="mb-5 text-center">What People say</h3>
+
+                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <!-- <div class="testimonials-image">
+                                        <img src="../static/images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
+                                    </div> -->
+
+                                    <div class="testimonials-info">
+                                        <p  class="testimonials-text">For professionalism and outstanding performance!  
+                                          We look forward to working with Engineer Nelover again in the 
+                                          future and highly recommend her excellent services.  
+                                          Thank you for your great and professional efforts!</p>
+
+                                        <h6 class="mb-0">Bilal</h6>
+                                        <span>Project Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <div class="testimonials-image">
+                                        <img src="../static/images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
+                                    </div>
+
+                                    <div class="testimonials-info">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+                                        <h6 class="mb-0">Marie</h6>
+                                        <span>Marketing Consultant</span>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <!-- <div class="testimonials-image">
+                                        <img src="../static/images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
+                                    </div> -->
+
+                                    <div class="testimonials-info">
+                                        <p  class="testimonials-text">Nelover is a talented developer, 
+                                          very experienced in working with a team, and very flexible. 
+                                          I worked with her on the Evalu8 application, as she is one of the 
+                                          people who contribute to providing solutions to problems.
+                                          I would definitely recommend her for any hire at any company.</p>
+
+                                        <h6 class="mb-0">Shoog Althlathini</h6>
+                                        <span>Software Enginering and Mobile
+                                          Developer @ inovar</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonials-thumb d-flex">
+                                    <!-- <div class="testimonials-image">
+                                        <img src="../static/images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
+                                    </div> -->
+
+                                    <div class="testimonials-info">
+                                        <p class="testimonials-text">I had the pleasure of working alongside Nelover as 
+                                          a Flutter developer, and I can confidently recommend 
+                                          their skills and contributions. Nelover is an exceptional 
+                                          developer who consistently delivers top-notch work. 
+                                          If you're seeking a talented Flutter developer, 
+                                          I wholeheartedly endorse Nelover.</p>
+
+                                        <h6 class="mb-0">Rajab Aabed</h6>
+                                        <span>Full-Sack Developer Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+    
+     <section class="contact section-padding pt-0" id="contact">
+      <div class="container">
+
+        <span class="info-text">I'm always open to connecting, collaborating, or answering any questions you may have.  
+          Whether you're interested in working together or just want to say hello, feel free to reach out!</span>
+          
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <form action="submit_form" method="post" class="contact-form webform"  role="form">
+                
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
+
+                    <label for="cf-name" class="webform-label">Full Name</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
+
+                    <label for="cf-email" class="webform-label">Your Email</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
+
+                    <label for="cf-message" class="webform-label">Message</label>
+                </div>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+            </form>
+          </div>
+
+            <div class="mx-auto col-lg-4 col-md-6 col-12">
+                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+
+                <!-- <p class="mb-1">+972 597486245</p> -->
+
+                <p>
+                    <a href="mailto:nelover.ar@icloud.com">
+                        nelover.ar@icloud.com
+                    <i class="fas fa-arrow-right custom-icon"></i>
+                    </a>
+                </p>
+
+                <ul class="social-links mt-2">
+                    <li><a href="https://x.com/neloveraburas?s=21" rel="noopener" class="fab fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/nelover.aburas" rel="noopener" class="fab fa-instagram"></a></li>
+                    <li><a href="https://github.com/neloverAr" rel="noopener" class="fab fa-github"></a></li>
+                    <li><a href="https://ps.linkedin.com/in/nelover-aburas" rel="noopener" class="fab fa-linkedin"></a></li> 
+                </ul>
+                
+              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2020 Ben Resume Page</p>
+                
+                <p>Design: <a href="https://www.tooplate.com" title="free HTML templates" target="_blank">Tooplate</a></p>
+            </div>
+
+        </div>
+      </div>
+    </section>
+     <!-- SCRIPTS -->
+     <script src="../static/js/jquery.min.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/custom.js"></script>
+
+</body>
+</html>
+
