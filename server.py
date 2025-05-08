@@ -26,16 +26,16 @@ def submit_form():
     if request.method == "POST":
         data = request.form.to_dict()
         sender_email = "neloverar@gmail.com"
-        subject = data['cf-name']
+        name = data['cf-name']
         body = data['cf-message']
         receiver_email = data["cf-email"]
         password = "rqfl dgkk kqac hyla"
 
         message = MIMEMultipart()
-        message["From"] = receiver_email
+        message["From"] = sender_email
         message["To"] = sender_email
-        message["Subject"] = subject
-
+        message["Subject"] = f"New contact Message from {name}:{receiver_email}"
+        
         message.attach(MIMEText(body, "plain"))
 
         try:
@@ -44,7 +44,7 @@ def submit_form():
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
             server.quit()
-            return render_template('/thankyou.html', name=subject)
+            return render_template('/thankyou.html', name=name)
         except Exception as e:
             return f"Error {e}"
 
